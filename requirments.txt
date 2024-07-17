@@ -3,3 +3,7 @@ pdfminer.six
 nltk
 transformers
 torch
+scipy
+numpy
+
+
