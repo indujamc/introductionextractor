@@ -44,7 +44,7 @@ def main():
                 content, next_heading = extract_content_between_headings(text, start_heading_keyword)
                 
                 if content:
-                    #st.write(f"Content between '{start_heading_keyword}' and '{next_heading}':")
+                   #st.write(f"Content between '{start_heading_keyword}' and '{next_heading}':")
                     #st.text(content)
                     
                     # Summarize the content
@@ -56,6 +56,9 @@ def main():
                     st.write("No content found between the specified headings.")
             else:
                 st.write("Please enter a heading keyword to start extraction.")
+
+if __name__ == "__main__":
+    main()
 
 if __name__ == "__main__":
     main()
