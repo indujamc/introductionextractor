@@ -1,16 +1,17 @@
 
 import streamlit as st
-import nltk
+
 from pdfminer.high_level import extract_text
 from nltk.tokenize import word_tokenize
 from summarizer import Summarizer
 from transformers import logging
+import nltk 
 
+#nltk.download('punkt')
 nltk.download('punkt')
 
-
 # Disable transformers logging to avoid unnecessary logs in the app
-logging.set_verbosity_error()
+#logging.set_verbosity_error()
 
 # Ensure NLTK data is downloaded
 #nltk.download('punkt')
