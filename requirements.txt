@@ -3,3 +3,4 @@ pdfminer.six
 nltk
 bert-extractive-summarizer
 transformers
+summarizer
