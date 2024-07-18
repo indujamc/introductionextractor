@@ -3,9 +3,13 @@ from pdfminer.high_level import extract_text
 from nltk.tokenize import word_tokenize
 from summarizer import Summarizer
 from transformers import logging
+import nltk
 
 # Disable transformers logging to avoid unnecessary logs in the app
 logging.set_verbosity_error()
+
+# Ensure NLTK data is downloaded
+nltk.download('punkt')
 
 def extract_content_between_headings(text, start_heading_keyword):
     content = []
@@ -44,13 +48,13 @@ def main():
                 content, next_heading = extract_content_between_headings(text, start_heading_keyword)
                 
                 if content:
-                   #st.write(f"Content between '{start_heading_keyword}' and '{next_heading}':")
-                    #st.text(content)
+                    st.write(f"Content between '{start_heading_keyword}' and '{next_heading}':")
+                    st.text(content)
                     
                     # Summarize the content
                     model = Summarizer()
                     summary = model(content, num_sentences=5)
-                    st.write(f"Summary of the '{start_heading_keyword}':")
+                    st.write(f"Summary of the '{start_heading_keyword}' and '{next_heading}':")
                     st.text(summary)
                 else:
                     st.write("No content found between the specified headings.")
@@ -59,9 +63,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-if __name__ == "__main__":
-    main()
-
-
-
