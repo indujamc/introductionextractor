@@ -4,3 +4,4 @@ nltk
 bert-extractive-summarizer
 transformers
 summarizer
+torch
