@@ -5,3 +5,4 @@ bert-extractive-summarizer
 transformers
 summarizer
 torch 
+nltk.download('punkt')
