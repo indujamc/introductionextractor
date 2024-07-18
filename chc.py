@@ -1,6 +1,4 @@
-
 import streamlit as st
-
 from pdfminer.high_level import extract_text
 from nltk.tokenize import word_tokenize
 from summarizer import Summarizer
@@ -10,11 +8,6 @@ import nltk
 #nltk.download('punkt')
 nltk.download('punkt')
 
-# Disable transformers logging to avoid unnecessary logs in the app
-#logging.set_verbosity_error()
-
-# Ensure NLTK data is downloaded
-#nltk.download('punkt')
 
 def extract_content_between_headings(text, start_heading_keyword):
     content = []
