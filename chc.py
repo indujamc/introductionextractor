@@ -1,4 +1,4 @@
-import pdfminer.six
+
 import streamlit as st
 from pdfminer.high_level import extract_text
 from nltk.tokenize import word_tokenize
