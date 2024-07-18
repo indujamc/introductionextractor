@@ -5,8 +5,19 @@ from summarizer import Summarizer
 from transformers import logging
 import nltk 
 
+from nltk import download
+
+def download_nltk_data():
+    try:
+        nltk.data.find('tokenizers/punkt')
+    except LookupError:
+        download('punkt')
+
+# Call the function to ensure data is downloaded
+download_nltk_data()
+
 #nltk.download('punkt')
-nltk.download('punkt')
+#nltk.download('punkt')
 
 
 def extract_content_between_headings(text, start_heading_keyword):
