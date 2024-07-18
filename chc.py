@@ -10,7 +10,7 @@ import nltk
 logging.set_verbosity_error()
 
 # Ensure NLTK data is downloaded
-nltk.download('punkt')
+#nltk.download('punkt')
 
 def extract_content_between_headings(text, start_heading_keyword):
     content = []
