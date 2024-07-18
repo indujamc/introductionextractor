@@ -1,6 +1,6 @@
-streamlit
-pdfminer.six
-nltk
-bert-extractive-summarizer
-transformers
+ streamlit
+ pdfminer.six
+ nltk
+ bert-extractive-summarizer
+ transformers
 
