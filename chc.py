@@ -7,6 +7,7 @@ import nltk
 
 from nltk import download
 
+
 def download_nltk_data():
     try:
         nltk.data.find('tokenizers/punkt')
