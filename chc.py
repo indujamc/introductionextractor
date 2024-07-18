@@ -6,13 +6,14 @@ from nltk.tokenize import word_tokenize
 from summarizer import Summarizer
 from transformers import logging
 
+nltk.download('punkt')
 
 
 # Disable transformers logging to avoid unnecessary logs in the app
 logging.set_verbosity_error()
 
 # Ensure NLTK data is downloaded
-nltk.download('punkt')
+#nltk.download('punkt')
 
 def extract_content_between_headings(text, start_heading_keyword):
     content = []
