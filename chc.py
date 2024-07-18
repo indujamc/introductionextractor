@@ -1,10 +1,11 @@
 
 import streamlit as st
+import nltk
 from pdfminer.high_level import extract_text
 from nltk.tokenize import word_tokenize
 from summarizer import Summarizer
 from transformers import logging
-import nltk
+
 
 
 # Disable transformers logging to avoid unnecessary logs in the app
